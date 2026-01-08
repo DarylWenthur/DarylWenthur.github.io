@@ -1,92 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Daryl Wenthur | Information Technology & CyberSecurity Student</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Daryl Wenthur | Information Technology & Cybersecurity Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 24px;
-      line-height: 1.6;
-      color: #222;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 28px;
+      line-height: 1.65;
+      color: #1f2328;
+      background: #ffffff;
     }
-    h1 { margin-bottom: 0; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 4px; }
-    .tagline { color: #555; margin-top: 4px; }
-    .project {
-      border-left: 4px solid #333;
-      padding-left: 12px;
-      margin: 20px 0;
+
+    header { margin-bottom: 22px; }
+    h1 { margin: 0 0 6px 0; font-size: 2.1rem; }
+    .tagline { margin: 0; color: #57606a; font-size: 1.05rem; }
+
+    nav {
+      margin-top: 14px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
     }
-    a { color: #0a66c2; text-decoration: none; }
+
+    a { color: #0969da; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
+    h2 {
+      margin-top: 28px;
+      border-bottom: 2px solid #d0d7de;
+      padding-bottom: 6px;
+      font-size: 1.35rem;
+    }
+
+    .card {
+      border: 1px solid #d0d7de;
+      border-radius: 12px;
+      padding: 16px 16px;
+      margin: 14px 0;
+      box-shadow: 0 1px 0 rgba(31,35,40,0.04);
+      background: #ffffff;
+    }
+
+    .card h3 { margin: 0 0 8px 0; font-size: 1.1rem; }
+    .meta { margin: 0 0 10px 0; color: #57606a; }
+    .meta strong { color: #1f2328; }
+
+    ul { margin: 10px 0 0 18px; }
+    .pillrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .pill {
+      font-size: 0.92rem;
+      padding: 6px 10px;
+      border: 1px solid #d0d7de;
+      border-radius: 999px;
+      background: #f6f8fa;
+      color: #1f2328;
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid #d0d7de;
+      color: #57606a;
+      font-size: 0.95rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d1117; color: #e6edf3; }
+      .tagline, .meta, footer { color: #8b949e; }
+      h2 { border-bottom-color: #30363d; }
+      .card {
+        background: #0d1117;
+        border-color: #30363d;
+        box-shadow: none;
+      }
+      a { color: #58a6ff; }
+      .pill { background: #161b22; border-color: #30363d; color: #e6edf3; }
+    }
   </style>
 </head>
+
 <body>
+  <header>
+    <h1>Daryl Wenthur</h1>
+    <p class="tagline">Information Technology & Cybersecurity Student | Aspiring Security Professional</p>
 
-  <h1>Daryl Wenthur</h1>
-  <p class="tagline">Information Technology & CyberSecurity Student | Aspiring Pentester</p>
+    <nav>
+      <a href="https://github.com/DarylWenthur" target="_blank" rel="noopener">GitHub</a>
+      <!-- Replace YOUR-LINK with your actual LinkedIn slug -->
+      <a href="https://linkedin.com/in/YOUR-LINK" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- Optional: add resume.pdf to the repo root and uncomment the line below -->
+      <!-- <a href="resume.pdf">Resume (PDF)</a> -->
+    </nav>
+  </header>
 
-  <h2>About Me</h2>
-<p>
-  I’m a college student studying Information Technology with a concentration in Cybersecurity.
-  I’m passionate about securing systems, understanding how attacks happen, and building strong technical foundations in networking, operating systems, and scripting.
-  This portfolio highlights selected coursework and projects that demonstrate my hands-on experience and growth in the field.
-</p>
-
-
-  <h2>Projects</h2>
-
-  <!-- PROJECT 1 -->
-  <div class="project">
-    <h3>Course Project Title</h3>
-    <p><strong>Class:</strong> Intro to Programming</p>
-    <p><strong>Tools:</strong> Python</p>
+  <section>
+    <h2>About</h2>
     <p>
-      Built a program that ____. This project strengthened my understanding of ____.
+      I’m a college student studying Information Technology with a concentration in Cybersecurity.
+      I have a strong foundation in programming with C++, Java, and Python, and I actively develop
+      my security skills through hands-on labs including Hack The Box and a personal home lab.
+      I built my own PC and run virtualized environments with Kali Linux to practice ethical
+      penetration testing against intentionally vulnerable systems, gaining practical experience
+      with common attack techniques and defensive awareness.
     </p>
+
+    <div class="pillrow">
+      <span class="pill">Cybersecurity</span>
+      <span class="pill">IT Support / Troubleshooting</span>
+      <span class="pill">Linux</span>
+      <span class="pill">Networking</span>
+      <span class="pill">Scripting</span>
+      <span class="pill">Virtualization</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <!-- Replace the placeholder repo links with your actual project repos -->
+    <div class="card">
+      <h3>Systems Programming Assignments</h3>
+      <p class="meta"><strong>Focus:</strong> OOP, data structures, debugging & program design</p>
+      <p>
+        Developed multiple course assignments using C++ and Java, emphasizing clean design,
+        correct logic, and maintainable code. Strengthened understanding of algorithms, problem
+        decomposition, and troubleshooting.
+      </p>
+      <ul>
+        <li>Object-oriented design patterns (classes, interfaces, encapsulation)</li>
+        <li>Data structures (lists, stacks/queues, maps) and basic algorithmic thinking</li>
+        <li>Testing and debugging to meet assignment requirements</li>
+      </ul>
+      <!-- Example: <p><a href="https://github.com/DarylWenthur/your-repo">View repo</a></p> -->
+    </div>
+
+    <div class="card">
+      <h3>Linux Administration & Security Labs</h3>
+      <p class="meta"><strong>Tools:</strong> Linux, shell utilities, networking commands</p>
+      <p>
+        Completed labs focused on Linux fundamentals and security best practices, including
+        permissions, process management, and basic log inspection. Built confidence navigating
+        the command line and diagnosing system issues.
+      </p>
+      <ul>
+        <li>User/groups, permissions, and access control concepts</li>
+        <li>Service/process awareness and troubleshooting</li>
+        <li>Intro-level log review and security hygiene</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hands-On Practice</h2>
+
+    <div class="card">
+      <h3>Penetration Testing Labs – Hack The Box</h3>
+      <p class="meta"><strong>Focus:</strong> Enumeration, web exploitation, privilege escalation</p>
+      <p>
+        Actively practice offensive security skills through guided and retired machines on Hack The Box.
+        Gained experience with reconnaissance, vulnerability analysis, and post-exploitation concepts in
+        controlled lab environments.
+      </p>
+      <ul>
+        <li>Recon & enumeration methodology (services, directories, endpoints)</li>
+        <li>Common web and system misconfigurations</li>
+        <li>Documenting findings and lessons learned</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Personal Cybersecurity Home Lab</h3>
+      <p class="meta"><strong>Environment:</strong> Custom-built PC, virtualization, Kali Linux</p>
+      <p>
+        Built and maintain a personal cybersecurity home lab to practice ethical penetration testing
+        in a safe, controlled environment. Run Kali Linux alongside intentionally vulnerable VMs to
+        improve methodology, tool familiarity, and defensive understanding.
+      </p>
+      <ul>
+        <li>Virtualization setup and VM networking</li>
+        <li>Safe testing against intentionally vulnerable systems</li>
+        <li>Methodical workflow: recon → exploit → validate impact → document</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="pillrow">
+      <span class="pill">Python</span>
+      <span class="pill">C++</span>
+      <span class="pill">Java</span>
+      <span class="pill">Linux</span>
+      <span class="pill">Kali Linux</span>
+      <span class="pill">Networking Fundamentals</span>
+      <span class="pill">VirtualBox / VMware</span>
+      <span class="pill">Git & GitHub</span>
+      <span class="pill">HTML/CSS</span>
+      <span class="pill">Troubleshooting</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
     <p>
-      <a href="https://github.com/DarylWenthur/PROJECT-REPO">View on GitHub</a>
+      GitHub: <a href="https://github.com/DarylWenthur" target="_blank" rel="noopener">github.com/DarylWenthur</a><br />
+      LinkedIn: <a href="https://linkedin.com/in/daryl-wenthur-a38917a4">linkedin.com/in/daryl-wenthur-a38917a4/</a>
+      <!-- Optional: add your email if you want -->
+      <!-- Email: <a href="mailto:you@school.edu">you@school.edu</a> -->
     </p>
-  </div>
+  </section>
 
-  <!-- PROJECT 2 -->
-  <div class="project">
-    <h3>Course Project Title</h3>
-    <p><strong>Class:</strong> Data Structures</p>
-    <p><strong>Tools:</strong> Python, Git</p>
-    <p>
-      Developed ____. Learned how to ____.
-    </p>
-    <p>
-      <a href="https://github.com/DarylWenthur/PROJECT-REPO">View on GitHub</a>
-    </p>
-  </div>
+  <footer>
+    <p>© <span id="year"></span> Daryl Wenthur • Built with GitHub Pages</p>
+  </footer>
 
-  <h2>Skills</h2>
-<p>
-  Python • C++ • Java • Linux • Networking Fundamentals • Cybersecurity Basics • Git • HTML/CSS • Troubleshooting • System Administration
-</p>
-  
-<h2>Hands-On Practice</h2>
-<div class="project">
-  <h3>Penetration Testing Labs – Hack The Box</h3>
-  <p><strong>Platform:</strong> Hack The Box</p>
-  <p><strong>Focus:</strong> Web exploitation, privilege escalation, enumeration</p>
-  <p>
-    Actively practice offensive security skills through guided and retired machines on Hack The Box.
-    Gained experience with reconnaissance, vulnerability analysis, and post-exploitation techniques in controlled lab environments.
-  </p>
-</div>
-
-  <h2>Contact</h2>
-  <p>
-    GitHub: <a href="https://github.com/DarylWenthur">github.com/DarylWenthur</a><br>
-    LinkedIn: <a href="https://linkedin.com/in/daryl-wenthur-a38917a4">linkedin.com/in/daryl-wenthur-a38917a4/</a>
-  </p>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
